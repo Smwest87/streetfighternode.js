@@ -6,7 +6,7 @@ http.createServer(function(req, res){
   res.writeHead(200, {'Content-Type': 'text/html'});
   var q = url.parse(req.url, true).query;
   var character = ["Ryu", "Guile", "Bison"];
-  var notation = q.notation;
+
   if (q.notation== "qcf-p") {
     var specialmove= "fireball";
   }
@@ -38,5 +38,5 @@ else if (specialmove== "psycho crusher") {
       }
 else {
     res.write("Invalid Notation - Please try a different notation for character results.");
-}
-    }).listen(8080);
+  }
+}).listen(8080);
