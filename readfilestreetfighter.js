@@ -5,7 +5,6 @@ var fs = require('fs');
 http.createServer(function(req, res){
   res.writeHead(200, {'Content-Type': 'text/html'});
   var q = url.parse(req.url, true).query;
-  var character = ["Ryu", "Guile", "Bison"];
 
   if (q.notation== "qcf-p") {
     var specialmove= "fireball";
