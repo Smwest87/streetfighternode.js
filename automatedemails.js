@@ -10,9 +10,9 @@ var transporter = nodemailer.createTransport({
 
 var mailOptions = {
   from: 'medseekautomation@gmail.com',
-  to: 'cody.easterling@influencehealth.com, alex.haughton@influencehealth.com' ,
-  subject: 'PC MASTER RACE',
-  text: 'Destiny 2 at 4k, 60 FPS! Get off me son!'
+  to: 'steven.west@influencehealth.com' ,
+  subject: 'This could be mildly exciting',
+  html: '<h1> "This is the story of a girl"</h1> <br> <p> "Who cried a river an drowned the whole world" </p>'
 };
 
 transporter.sendMail(mailOptions, function(error, info){
